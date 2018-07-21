@@ -40,7 +40,7 @@ async def on_message(message):
                     await client.send_message(message.channel, 'Você não digitou um número inteiro, ou não digitou um número. Tente novamente.')
             else:
                 canal = client.get_channel('452914698682368000')
-                msg = await client.send_message(message.channel, 'Comandos apenas em {}!'.format(canal.mention))
+                msg = await client.send_message(message.channel, 'Use apenas em {}!'.format(canal.mention))
         if message.content.lower().startswith('a!jokenpo'):
             if message.channel == client.get_channel('470024457755426827'):
                 await client.send_message(message.channel, '[ 0 ] para PEDRA'
@@ -70,6 +70,6 @@ async def on_message(message):
                     await client.send_message(message.channel, 'Você ganhou! Fim de jogo.')
             else:
                 canal = client.get_channel('470024457755426827')
-                msg = await client.send_message(message.channel, 'Comandos apenas em {}!'.format(canal.mention))
+                msg = await client.send_message(message.channel, 'Use apenas em {}!'.format(canal.mention))
 
 client.run("NDcwMDIzNDg5NTc1ODQ1ODg5.DjQRAQ.yArFU1fmyQ14cS4PkVTmIS6llxE")

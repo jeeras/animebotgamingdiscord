@@ -21,7 +21,7 @@ async def on_member_join(member):
 async def on_message(message):
 
         if message.content.lower().startswith('a!guess'):
-            if message.channel == client.get_channel('452914698682368000'):
+            if message.channel == client.get_channel('470024457755426827'):
                 escolha = random.randint(0, 10)
                 await client.send_message(message.channel, 'Tente adivinhar um número que eu pensei de 0 a 10;')
                 palpite = await client.wait_for_message(timeout=999, author=message.author)
@@ -42,7 +42,7 @@ async def on_message(message):
                 canal = client.get_channel('452914698682368000')
                 msg = await client.send_message(message.channel, 'Comandos apenas em {}!'.format(canal.mention))
         if message.content.lower().startswith('a!jokenpo'):
-            if message.channel == client.get_channel('452914698682368000'):
+            if message.channel == client.get_channel('470024457755426827'):
                 await client.send_message(message.channel, '[ 0 ] para PEDRA'
                                                            '\n[ 1  ] para PAPEL'
                                                            '\n[ 2 ] para TESOURA')
@@ -69,7 +69,7 @@ async def on_message(message):
                 if int(jogada.content) == 2 and jogada_c == 1:
                     await client.send_message(message.channel, 'Você ganhou! Fim de jogo.')
             else:
-                canal = client.get_channel('452914698682368000')
+                canal = client.get_channel('470024457755426827')
                 msg = await client.send_message(message.channel, 'Comandos apenas em {}!'.format(canal.mention))
 
 client.run("NDcwMDIzNDg5NTc1ODQ1ODg5.DjQRAQ.yArFU1fmyQ14cS4PkVTmIS6llxE")
